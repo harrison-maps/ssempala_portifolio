@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-lowest": "#000000",
+                        "surface-variant": "#262626",
+                        "tertiary-fixed": "#00dcfd",
+                        "primary": "#69f6b8",
+                        "primary-dim": "#58e7ab",
+                        "secondary-fixed-dim": "#47edc4",
+                        "on-secondary": "#005d4a",
+                        "on-primary": "#005a3c",
+                        "inverse-on-surface": "#565555",
+                        "secondary-fixed": "#5afcd2",
+                        "on-background": "#ffffff",
+                        "background": "#0e0e0e",
+                        "secondary": "#5afcd2",
+                        "on-error-container": "#ffa8a3",
+                        "surface-dim": "#0e0e0e",
+                        "inverse-primary": "#006d4a",
+                        "on-tertiary-container": "#004955",
+                        "error-dim": "#d7383b",
+                        "on-tertiary-fixed": "#00343c",
+                        "tertiary": "#77e6ff",
+                        "on-secondary-fixed-variant": "#006853",
+                        "primary-container": "#06b77f",
+                        "on-error": "#490006",
+                        "inverse-surface": "#fcf9f8",
+                        "primary-fixed-dim": "#58e7ab",
+                        "tertiary-container": "#00dcfd",
+                        "surface-bright": "#2c2c2c",
+                        "on-primary-fixed": "#00452d",
+                        "surface-container-low": "#131313",
+                        "secondary-container": "#006b56",
+                        "primary-fixed": "#69f6b8",
+                        "on-primary-fixed-variant": "#006544",
+                        "on-surface": "#ffffff",
+                        "surface": "#0e0e0e",
+                        "surface-container-high": "#20201f",
+                        "tertiary-fixed-dim": "#00cdeb",
+                        "on-tertiary": "#005360",
+                        "on-primary-container": "#002919",
+                        "surface-container": "#1a1a1a",
+                        "error": "#ff716c",
+                        "secondary-dim": "#47edc4",
+                        "tertiary-dim": "#00cdeb",
+                        "outline-variant": "#484847",
+                        "on-secondary-fixed": "#004939",
+                        "surface-container-highest": "#262626",
+                        "surface-tint": "#69f6b8",
+                        "on-secondary-container": "#defff2",
+                        "on-tertiary-fixed-variant": "#005360",
+                        "outline": "#767575",
+                        "on-surface-variant": "#adaaaa",
+                        "error-container": "#9f0519"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #0e0e0e;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+        }
+        .monolith-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2px;
+            background-color: rgba(72, 72, 71, 0.2);
+        }
+        .text-emerald-custom { color: #10B981; }
+        .bg-emerald-custom { background-color: #10B981; }
+        .border-emerald-custom { border-color: #10B981; }
+    </style>
+</head>
+<body class="bg-surface">
+<!-- TopAppBar Monolith -->
+<nav class="fixed top-0 w-full z-50 rounded-none bg-[#0E0E0E] flex justify-between items-center px-12 py-6 w-full max-w-none">
+<div class="text-2xl font-bold tracking-tighter text-emerald-custom font-headline hover:text-white transition-colors"><a href="index.html">SSEMPALA HARRISON SOLOMON</a></div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="font-headline uppercase tracking-widest text-sm text-emerald-custom border-b-2 border-emerald-custom pb-1" href="work.html">WORK</a>
+<a class="font-headline uppercase tracking-widest text-sm text-white/60 hover:text-white transition-colors" href="about.html">ABOUT</a>
+<a class="font-headline uppercase tracking-widest text-sm text-white/60 hover:text-white transition-colors" href="index.html#services">SERVICES</a>
+<a class="font-headline uppercase tracking-widest text-sm text-white/60 hover:text-white transition-colors" href="index.html#contact">CONTACT</a>
+</div>
+<a href="index.html#contact" class="inline-block bg-emerald-custom text-on-primary-container px-8 py-3 font-headline uppercase tracking-widest text-xs font-bold hover:bg-primary-container transition-all active:scale-95">
+            GET_IN_TOUCH
+        </a>
+</nav>
+<main class="pt-32 pb-20 px-6 md:px-12 max-w-[1600px] mx-auto">
+<!-- Section Header: Intentional Asymmetry -->
+<header class="mb-24 flex flex-col md:flex-row items-baseline gap-8">
+<h1 class="text-7xl md:text-9xl font-headline font-bold tracking-tighter leading-none m-0 p-0 uppercase">
+                SELECTED<br/><span class="text-emerald-custom">ARCHIVE</span>
+</h1>
+<div class="max-w-md ml-auto md:ml-0 md:pl-12 border-l-2 border-emerald-custom">
+<p class="text-on-surface-variant font-body text-lg leading-relaxed">
+                    A collection of high-precision digital interventions. Engineered for performance, designed for human interaction. Every pixel serves a function.
+                </p>
+</div>
+</header>
+<!-- Projects Monolith Grid -->
+<div class="flex flex-col gap-[9rem]">
+<!-- Project 01: Mama Save -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+<div class="md:col-span-7 group relative overflow-hidden bg-surface-container-low">
+<img class="w-full grayscale hover:grayscale-0 transition-all duration-700 aspect-[16/10] object-cover" data-alt="Modern healthcare app interface on a smartphone screen, clean emerald green accents, minimalist medical data visualization icons" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYl15NfsCjFWNc7ELsVaNClrQmZrdAmwjYwAMn_URtis-sC7AbwbNBjR4JAUX39vnFcYUz4dRgxMhGG8CjHJ-NIyESyaVulH3z6fc1it0Hz-_rEH3tX1ohhtgV2v-q9BhY_wJ-CcCscIO-DaWAR6sa5MCGAlJgNu9K7DtbvpbJdJOazAyd8-JZxG0FkRCwApBdcLlDQm9E8cy1EiExu1jH9WjzpZb42yUHGYOCnV-vuKgr-cOXxysasPLnmRcQxk2xvbXMNeBDYoOh"/>
+<div class="absolute top-6 left-6 bg-emerald-custom text-on-primary font-label px-4 py-1 text-[10px] tracking-widest font-black uppercase">
+                        Healthcare Tech
+                    </div>
+</div>
+<div class="md:col-span-5 flex flex-col gap-6 pt-4">
+<div class="flex items-center gap-4">
+<span class="text-emerald-custom font-headline text-2xl font-bold">01</span>
+<div class="h-[1px] w-12 bg-outline-variant/30"></div>
+</div>
+<h2 class="text-5xl font-headline font-bold tracking-tighter uppercase">Mama Save</h2>
+<p class="text-on-surface-variant font-body leading-relaxed max-w-md">
+                        Financial inclusion platform designed for expectant mothers. A secure digital vault for medical savings and emergency transport logistics.
+                    </p>
+<div class="flex flex-wrap gap-3 mt-4">
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] tracking-tighter uppercase">Fintech</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] tracking-tighter uppercase">UX Design</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] tracking-tighter uppercase">Product strategy</span>
+</div>
+<button class="mt-4 flex items-center gap-4 group w-fit">
+<span class="text-emerald-custom font-headline font-bold uppercase tracking-widest text-sm">View Case Study</span>
+<span class="material-symbols-outlined text-emerald-custom group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</button>
+</div>
+</section>
+<!-- Project 02: Fire Incident Analysis -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+<div class="md:col-span-5 order-2 md:order-1 flex flex-col gap-6 pt-4 text-right items-end">
+<div class="flex items-center gap-4">
+<div class="h-[1px] w-12 bg-outline-variant/30"></div>
+<span class="text-emerald-custom font-headline text-2xl font-bold">02</span>
+</div>
+<h2 class="text-5xl font-headline font-bold tracking-tighter uppercase">Fire Incident Analysis</h2>
+<p class="text-on-surface-variant font-body leading-relaxed max-w-md">
+                        Predictive modeling dashboard for municipal fire departments. Real-time risk assessment using historic spatial data and sensor fusion.
+                    </p>
+<div class="flex flex-wrap gap-3 mt-4 justify-end">
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] tracking-tighter uppercase">Big Data</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] tracking-tighter uppercase">AI/ML</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] tracking-tighter uppercase">Geospatial</span>
+</div>
+<button class="mt-4 flex items-center gap-4 group w-fit">
+<span class="material-symbols-outlined text-emerald-custom group-hover:-translate-x-2 transition-transform">arrow_left_alt</span>
+<span class="text-emerald-custom font-headline font-bold uppercase tracking-widest text-sm">Explore Dataset</span>
+</button>
+</div>
+<div class="md:col-span-7 order-1 md:order-2 group relative overflow-hidden bg-surface-container-low">
+<img class="w-full grayscale hover:grayscale-0 transition-all duration-700 aspect-[16/10] object-cover" data-alt="Digital heat map on a large screen in a dark room, glowing orange and emerald green points representing urban density and incidents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIPZhevsz3LEW1LhBswzWnRQBecR2zs9YlZ8Rcc7EltzYFc53jDcMOlsD5u23K9gxZQ4XflwBFn2xv3jNEUIv0NsODSVcs9gGbPdcuOhWlsST7Nw6Y_K2CL7-gyv1bNPiNtGiQlo5eMySLqC3ct_GJNCIa67pQDDaTVArg-mZnNXnQSTIwJw2LX3c-gC8JXnGtnshBEymKXQXxl43aNtjEx2sx1OueoYyaq9XQYhBLGXX4gD_DkYd7QRAvbBGxk6O2s3ineQhDXhT0"/>
+<div class="absolute top-6 right-6 bg-emerald-custom text-on-primary font-label px-4 py-1 text-[10px] tracking-widest font-black uppercase">
+                        Public Safety
+                    </div>
+</div>
+</section>
+<!-- Project 03: Patient Monitoring -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+<div class="md:col-span-7 group relative overflow-hidden bg-surface-container-low">
+<img class="w-full grayscale hover:grayscale-0 transition-all duration-700 aspect-[16/10] object-cover" data-alt="Macro photo of a medical sensor device, soft ambient lighting with sharp emerald green LED status indicators on a black matte surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKunuwMDBONAVJKzoxfp7a59a0zKBm3tyKWSqkCbPsOl-kBFD1IKaZUEEbZYTE5YPrBPAWwzwAYMxTkdhe3uvtFrv2u177gtYwQh-VHpJF9-vdO4ndIvqGi8Ntn0b0lae5_-Kt_LoJ-9xlmoD0eEAg41R96n3O791YWDJZ2ywuePD8T5WEG1nCLuoddyc0W4FfrBbfU68E2CihcWbw1eQQtxRhcsWv0D0vy8VjUOfP5rc5OuASymsmTk9yYaT2YetkEucLWyYITM6A"/>
+<div class="absolute top-6 left-6 bg-emerald-custom text-on-primary font-label px-4 py-1 text-[10px] tracking-widest font-black uppercase">
+                        Remote Care
+                    </div>
+</div>
+<div class="md:col-span-5 flex flex-col gap-6 pt-4">
+<div class="flex items-center gap-4">
+<span class="text-emerald-custom font-headline text-2xl font-bold">03</span>
+<div class="h-[1px] w-12 bg-outline-variant/30"></div>
+</div>
+<h2 class="text-5xl font-headline font-bold tracking-tighter uppercase">Patient Monitoring</h2>
+<p class="text-on-surface-variant font-body leading-relaxed max-w-md">
+                        Low-latency clinical interface for remote ICU oversight. Prioritizing signal over noise to reduce alert fatigue in critical care environments.
+                    </p>
+<div class="flex flex-wrap gap-3 mt-4">
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] tracking-tighter uppercase">IoT</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] tracking-tighter uppercase">Dashboard</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] tracking-tighter uppercase">Critical Systems</span>
+</div>
+<button class="mt-4 flex items-center gap-4 group w-fit">
+<span class="text-emerald-custom font-headline font-bold uppercase tracking-widest text-sm">Technical Review</span>
+<span class="material-symbols-outlined text-emerald-custom group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</button>
+</div>
+</section>
+<!-- Project 04: Student Performance -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+<div class="md:col-span-5 order-2 md:order-1 flex flex-col gap-6 pt-4 text-right items-end">
+<div class="flex items-center gap-4">
+<div class="h-[1px] w-12 bg-outline-variant/30"></div>
+<span class="text-emerald-custom font-headline text-2xl font-bold">04</span>
+</div>
+<h2 class="text-5xl font-headline font-bold tracking-tighter uppercase">Student Performance</h2>
+<p class="text-on-surface-variant font-body leading-relaxed max-w-md">
+                        Adaptive learning analytics system. Using neural networks to identify learning gaps and personalize educational trajectories for K-12 students.
+                    </p>
+<div class="flex flex-wrap gap-3 mt-4 justify-end">
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] tracking-tighter uppercase">EdTech</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] tracking-tighter uppercase">Neural Nets</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] tracking-tighter uppercase">Visualization</span>
+</div>
+<button class="mt-4 flex items-center gap-4 group w-fit">
+<span class="material-symbols-outlined text-emerald-custom group-hover:-translate-x-2 transition-transform">arrow_left_alt</span>
+<span class="text-emerald-custom font-headline font-bold uppercase tracking-widest text-sm">Methodology</span>
+</button>
+</div>
+<div class="md:col-span-7 order-1 md:order-2 group relative overflow-hidden bg-surface-container-low">
+<img class="w-full grayscale hover:grayscale-0 transition-all duration-700 aspect-[16/10] object-cover" data-alt="Geometric abstract visualization of complex interconnected data nodes, glowing emerald and white lines on a dark obsidian background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsoULHqoGmmskponQzsuK1TRVJJBOxPMSynptFLIn32OZI4mQf_jVKjBKaQpR_ort2O2CAgXMLv5Fnwog2FhEhaKqzkV47qOjhUwSht7n4KU25ffGvaRv_qdrdo06mYtnZmbllmj1B4rnO52H9hO2A06HX_09nCWUOETyvPm4kpq_5uJ_t5KAvd4kFwfy6-TtO9usoFS8zsPHOZ_hax4ij2tJhNKL9OCgRAkv4JMua0y1INLGzfTUbKHQJEhbf3CzBgHvS9BJK_Ly4"/>
+<div class="absolute top-6 right-6 bg-emerald-custom text-on-primary font-label px-4 py-1 text-[10px] tracking-widest font-black uppercase">
+                        Education AI
+                    </div>
+</div>
+</section>
+</div>
+<!-- Monolith Data Section -->
+<div class="mt-32 border-t border-outline-variant/20 pt-20">
+<h3 class="font-headline text-xs tracking-[0.3em] uppercase text-on-surface-variant mb-12">Performance Metrics</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-1 bg-outline-variant/10">
+<div class="bg-surface-container-low p-10 flex flex-col gap-2">
+<span class="text-5xl font-headline font-bold text-emerald-custom">24</span>
+<span class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Active Deployments</span>
+</div>
+<div class="bg-surface-container-low p-10 flex flex-col gap-2">
+<span class="text-5xl font-headline font-bold text-emerald-custom">100%</span>
+<span class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Uptime SLA</span>
+</div>
+<div class="bg-surface-container-low p-10 flex flex-col gap-2">
+<span class="text-5xl font-headline font-bold text-emerald-custom">12.5k</span>
+<span class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Daily Users</span>
+</div>
+<div class="bg-surface-container-low p-10 flex flex-col gap-2">
+<span class="text-5xl font-headline font-bold text-emerald-custom">0.4s</span>
+<span class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Avg Latency</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Monolith -->
+<footer class="w-full border-t border-[#484847]/20 tonal-shift bg-[#131313] flex flex-col md:flex-row justify-between items-center px-12 py-10 w-full">
+<div class="flex flex-col gap-2 mb-8 md:mb-0">
+<span class="text-emerald-custom font-black font-headline tracking-tighter text-lg uppercase">SSEMPALA HARRISON SOLOMON</span>
+<span class="font-['Inter'] text-[11px] tracking-[0.05em] uppercase text-white/40">© 2024 SSEMPALA HARRISON SOLOMON. ALL RIGHTS RESERVED.</span>
+</div>
+<div class="flex gap-8">
+<a class="font-['Inter'] text-[11px] tracking-[0.05em] uppercase text-white/40 hover:text-emerald-custom transition-colors opacity-80 hover:opacity-100" href="mailto:ssempa3666@gmail.com">EMAIL</a>
+<span class="font-['Inter'] text-[11px] tracking-[0.05em] uppercase text-white/40">+256 750937488</span>
+<a class="font-['Inter'] text-[11px] tracking-[0.05em] uppercase text-white/40 hover:text-emerald-custom transition-colors opacity-80 hover:opacity-100" href="#">LINKEDIN</a>
+<a class="font-['Inter'] text-[11px] tracking-[0.05em] uppercase text-white/40 hover:text-emerald-custom transition-colors opacity-80 hover:opacity-100" href="https://github.com/harrison-maps" target="_blank">GITHUB</a>
+</div>
+</footer>
+</body></html>

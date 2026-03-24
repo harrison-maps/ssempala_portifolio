@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PORTFOLIO MONOLITH | Neural Slate</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-lowest": "#000000",
+                        "surface-variant": "#262626",
+                        "tertiary-fixed": "#00dcfd",
+                        "primary": "#69f6b8",
+                        "primary-dim": "#58e7ab",
+                        "secondary-fixed-dim": "#47edc4",
+                        "on-secondary": "#005d4a",
+                        "on-primary": "#005a3c",
+                        "inverse-on-surface": "#565555",
+                        "secondary-fixed": "#5afcd2",
+                        "on-background": "#ffffff",
+                        "background": "#0e0e0e",
+                        "secondary": "#5afcd2",
+                        "on-error-container": "#ffa8a3",
+                        "surface-dim": "#0e0e0e",
+                        "inverse-primary": "#006d4a",
+                        "on-tertiary-container": "#004955",
+                        "error-dim": "#d7383b",
+                        "on-tertiary-fixed": "#00343c",
+                        "tertiary": "#77e6ff",
+                        "on-secondary-fixed-variant": "#006853",
+                        "primary-container": "#06b77f",
+                        "on-error": "#490006",
+                        "inverse-surface": "#fcf9f8",
+                        "primary-fixed-dim": "#58e7ab",
+                        "tertiary-container": "#00dcfd",
+                        "surface-bright": "#2c2c2c",
+                        "on-primary-fixed": "#00452d",
+                        "surface-container-low": "#131313",
+                        "secondary-container": "#006b56",
+                        "primary-fixed": "#69f6b8",
+                        "on-primary-fixed-variant": "#006544",
+                        "on-surface": "#ffffff",
+                        "surface": "#0e0e0e",
+                        "surface-container-high": "#20201f",
+                        "tertiary-fixed-dim": "#00cdeb",
+                        "on-tertiary": "#005360",
+                        "on-primary-container": "#002919",
+                        "surface-container": "#1a1a1a",
+                        "error": "#ff716c",
+                        "secondary-dim": "#47edc4",
+                        "tertiary-dim": "#00cdeb",
+                        "outline-variant": "#484847",
+                        "on-secondary-fixed": "#004939",
+                        "surface-container-highest": "#262626",
+                        "surface-tint": "#69f6b8",
+                        "on-secondary-container": "#defff2",
+                        "on-tertiary-fixed-variant": "#005360",
+                        "outline": "#767575",
+                        "on-surface-variant": "#adaaaa",
+                        "error-container": "#9f0519"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body {
+            background-color: #0e0e0e;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+        }
+        .monolith-mask {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 rounded-none bg-[#0E0E0E] flex justify-between items-center px-12 py-6 w-full max-max-none">
+<div class="text-2xl font-bold tracking-tighter text-[#10B981] font-headline hover:text-white transition-colors">
+            <a href="index.html">SSEMPALA HARRISON SOLOMON</a>
+        </div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="font-['Space_Grotesk'] uppercase tracking-widest text-sm text-white/60 hover:text-white transition-colors" href="work.html">WORK</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-widest text-sm text-white/60 hover:text-white transition-colors" href="about.html">ABOUT</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-widest text-sm text-white/60 hover:text-white transition-colors" href="index.html#services">SERVICES</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-widest text-sm text-white/60 hover:text-white transition-colors" href="index.html#contact">CONTACT</a>
+</div>
+<a href="index.html#contact" class="inline-block bg-primary text-on-primary font-headline uppercase tracking-widest text-xs px-8 py-3 hover:bg-primary-dim transition-all duration-300 scale-95 active:scale-90">
+            GET_IN_TOUCH
+        </a>
+</nav>
+<main class="pt-32 pb-20">
+<!-- Hero Section -->
+<section class="px-12 mb-32 grid grid-cols-12 gap-6">
+<div class="col-span-12 md:col-span-8 lg:col-span-7">
+<span class="font-label text-primary uppercase tracking-[0.2em] text-xs mb-6 block">ENGINEERING DIGITAL EXCELLENCE</span>
+<h1 class="font-headline text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-none mb-12">
+                    INTELLIGENT <br/>
+<span class="text-primary">SYSTEMS</span>
+</h1>
+<p class="font-body text-on-surface-variant text-lg max-w-xl leading-relaxed">
+                    Crafting high-precision digital infrastructures that blend brutalist geometric clarity with advanced neural logic. Designed to perform, built to last.
+                </p>
+</div>
+<div class="col-span-12 md:col-span-4 lg:col-span-5 flex items-end justify-end">
+<div class="w-full h-[400px] bg-surface-container-low relative overflow-hidden">
+<img class="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-700 opacity-60" alt="Ssempala Harrison Solomon" src="ssempa.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Featured Projects (The Monolith Grid) -->
+<section class="px-12 mb-40">
+<div class="flex justify-between items-end mb-16">
+<h2 class="font-headline text-4xl font-bold tracking-tight uppercase">SELECTED_RECORDS</h2>
+<span class="font-label text-outline text-xs tracking-widest">[ 02 / 12 ]</span>
+</div>
+<div class="grid grid-cols-12 gap-px bg-outline-variant/20">
+<!-- Project 01: Mama Save -->
+<div class="col-span-12 lg:col-span-7 bg-surface p-0 group overflow-hidden relative border-r border-outline-variant/20">
+<div class="aspect-video w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Conceptual medical interface with emerald green glowing data visualizations showing health metrics on a dark glass tablet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByeCUf271JjONEKEvLzX-u-xp7zBx-BALxbz3zhPKJdA-D078lRrpJRQM5Y_cD45FN6UvT8kdCkj0n4Vq64z-G0CUEKFzRgx5I-2BhM3J-QOMaSvuzAFR91p_HbCRB8kzWqUt31HU780P-5m9DpL-SG1Vf6Yc61I-w2qI1OO4jX_5tHp7_yHTTjth0eO4oKUj2Jv54tF2vVKo6NUtOxw6SS8aNCnAAnt1bmJw5LIdBL_GUlV3FhjgCpcXyBf-scyztgMehXvlZqidq"/>
+</div>
+<div class="p-10">
+<div class="flex items-center gap-4 mb-4">
+<span class="w-12 h-[1px] bg-primary"></span>
+<span class="font-label text-primary text-xs tracking-widest uppercase">FINTECH / SOCIAL IMPACT</span>
+</div>
+<h3 class="font-headline text-4xl font-bold mb-6 group-hover:text-primary transition-colors">Mama Save</h3>
+<p class="font-body text-on-surface-variant max-w-lg mb-8">
+                            A decentralized savings infrastructure designed for maternal health accessibility. Utilizing predictive modeling to secure future medical requirements.
+                        </p>
+<div class="flex gap-10">
+<div>
+<p class="font-label text-[10px] text-outline uppercase tracking-widest mb-1">Status</p>
+<p class="font-label text-xs text-on-surface">DEPLOYED.V2</p>
+</div>
+<div>
+<p class="font-label text-[10px] text-outline uppercase tracking-widest mb-1">Technology</p>
+<p class="font-label text-xs text-on-surface">NEURAL_LEDGER</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 02: Fire Incident Analysis -->
+<div class="col-span-12 lg:col-span-5 bg-surface p-0 group overflow-hidden relative">
+<div class="aspect-square w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Abstract thermal imaging scan visualization with sharp digital artifacts and emerald green highlights on dark grey terrain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_t68r_bNMO6VbLx8NgvpKFSX0pe9Ci148_dS9nvET1U4EGioMFoY9lwHk72YtKjbjtplslxWBSIA9oKo8b24XC7rq1zLZmZl7d3Iq6t20ZkPSgZGCJf8PNwWtPbz6fN29xfgdZcnY1VKR7rJQ49lGZxULlxbsQOl78MhoEv-BB87qsN0J17_fx__yL5wVdl52bK3lBiTlMBpk01qtOMAvHXM5sMzxJzolm5if26V2MCLhL1C0_WbU2mbHe-yFsqw56JL2f3_Po6Hb"/>
+</div>
+<div class="p-10">
+<div class="flex items-center gap-4 mb-4">
+<span class="w-12 h-[1px] bg-primary"></span>
+<span class="font-label text-primary text-xs tracking-widest uppercase">DATA_VIZ / ANALYTICS</span>
+</div>
+<h3 class="font-headline text-4xl font-bold mb-6 group-hover:text-primary transition-colors">Fire Incident Analysis</h3>
+<p class="font-body text-on-surface-variant mb-8">
+                            High-fidelity real-time simulation and forensic analysis platform for emergency responders. 
+                        </p>
+<button class="flex items-center gap-3 text-primary font-label text-xs tracking-widest group/btn">
+                            VIEW_CASE_STUDY
+                            <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Block / Data Monolith -->
+<section class="px-12 mb-40">
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-px bg-outline-variant/20">
+<div class="bg-surface-container-low p-12 aspect-square flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary text-4xl">memory</span>
+<div>
+<h4 class="font-headline text-6xl font-bold text-on-surface">99.9</h4>
+<p class="font-label text-xs text-outline uppercase tracking-widest">Uptime_Efficiency</p>
+</div>
+</div>
+<div class="bg-surface-container-high p-12 aspect-square flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary text-4xl">database</span>
+<div>
+<h4 class="font-headline text-6xl font-bold text-on-surface">142</h4>
+<p class="font-label text-xs text-outline uppercase tracking-widest">Deployments_Active</p>
+</div>
+</div>
+<div class="bg-surface-container-highest p-12 aspect-square flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary text-4xl">security</span>
+<div>
+<h4 class="font-headline text-6xl font-bold text-on-surface">ZERO</h4>
+<p class="font-label text-xs text-outline uppercase tracking-widest">Security_Breaches</p>
+</div>
+</div>
+<div class="bg-surface p-12 aspect-square flex flex-col justify-center border border-primary/20">
+<p class="font-headline text-2xl font-medium text-primary mb-4 italic">"The future is carved, not assembled."</p>
+<p class="font-label text-[10px] text-outline tracking-[0.3em] uppercase">SYSTEM_MANIFESTO</p>
+</div>
+</div>
+</section>
+<!-- Services / Technical Stacks -->
+<section id="services" class="px-12 grid grid-cols-12 gap-12 mb-40">
+<div class="col-span-12 lg:col-span-4">
+<h2 class="font-headline text-5xl font-bold tracking-tighter mb-8">SERVICES</h2>
+<div class="w-full h-[1px] bg-outline-variant mb-8"></div>
+<p class="font-body text-on-surface-variant leading-loose">
+                    Transforming raw data into actionable insights and building robust digital interfaces. From backend data pipelines to frontend web design.
+                </p>
+</div>
+<div class="col-span-12 lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="p-8 bg-surface-container-low border-l-4 border-primary">
+<h5 class="font-headline text-xl font-bold mb-4 uppercase tracking-wider">Data Operations</h5>
+<ul class="space-y-4 font-label text-xs text-on-surface-variant tracking-widest">
+<li class="flex justify-between"><span>DATA_ANALYSIS</span> <span>01</span></li>
+<li class="flex justify-between"><span>DATA_SCIENCE</span> <span>02</span></li>
+<li class="flex justify-between"><span>DATA_CLEANING</span> <span>03</span></li>
+</ul>
+</div>
+<div class="p-8 bg-surface-container-low border-l-4 border-primary/40">
+<h5 class="font-headline text-xl font-bold mb-4 uppercase tracking-wider">Digital Creation</h5>
+<ul class="space-y-4 font-label text-xs text-on-surface-variant tracking-widest">
+<li class="flex justify-between"><span>WEB_DESIGN</span> <span>01</span></li>
+<li class="flex justify-between"><span>UI_UX_INTERFACES</span> <span>02</span></li>
+<li class="flex justify-between"><span>FRONTEND_DEV</span> <span>03</span></li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="px-12 mb-40">
+<div class="bg-surface-container-low p-20 flex flex-col items-center text-center border-l-4 border-primary">
+<span class="font-label text-xs text-primary tracking-[0.5em] uppercase mb-8">Initiate Collaboration</span>
+<h2 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-white mb-8 max-w-4xl">
+    READY TO ENGINEER YOUR NEXT PROJECT?
+</h2>
+<p class="font-body text-on-surface-variant text-lg mb-12">
+    Reach out directly via email or phone. I'm currently available for new opportunities.
+</p>
+<div class="flex flex-col md:flex-row gap-6 mb-12">
+    <div class="bg-surface p-8 border border-outline-variant/20 flex flex-col items-center min-w-[250px]">
+        <span class="material-symbols-outlined text-primary text-4xl mb-4">mail</span>
+        <h5 class="font-headline font-bold text-white mb-2">EMAIL</h5>
+        <a href="mailto:ssempa3666@gmail.com" class="font-label text-on-surface-variant hover:text-primary transition-colors">ssempa3666@gmail.com</a>
+    </div>
+    <div class="bg-surface p-8 border border-outline-variant/20 flex flex-col items-center min-w-[250px]">
+        <span class="material-symbols-outlined text-primary text-4xl mb-4">call</span>
+        <h5 class="font-headline font-bold text-white mb-2">PHONE</h5>
+        <a href="tel:+256750937488" class="font-label text-on-surface-variant hover:text-primary transition-colors">+256 750937488</a>
+    </div>
+</div>
+<button onclick="navigator.clipboard.writeText('ssempa3666@gmail.com'); alert('Email address copied to clipboard!');" class="bg-primary text-on-primary px-12 py-5 font-headline font-bold uppercase tracking-widest text-lg hover:scale-105 transition-transform duration-300">
+    Copy Email Address
+</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#484847]/20 bg-[#0E0E0E] flex flex-col md:flex-row justify-between items-center px-12 py-10 w-full">
+<div class="flex flex-col md:flex-row gap-8 items-center">
+<div class="text-[#10B981] font-black font-headline tracking-tighter">SSEMPALA HARRISON SOLOMON</div>
+<div class="font-['Inter'] text-[11px] tracking-[0.05em] uppercase text-white/40">
+                © 2024 SSEMPALA HARRISON SOLOMON. ALL RIGHTS RESERVED.
+            </div>
+</div>
+<div class="flex gap-8 mt-6 md:mt-0">
+<a class="font-['Inter'] text-[11px] tracking-[0.05em] uppercase text-white/40 hover:text-[#10B981] transition-colors opacity-80 hover:opacity-100" href="mailto:ssempa3666@gmail.com">EMAIL</a>
+<span class="font-['Inter'] text-[11px] tracking-[0.05em] uppercase text-white/40">+256 750937488</span>
+<a class="font-['Inter'] text-[11px] tracking-[0.05em] uppercase text-white/40 hover:text-[#10B981] transition-colors opacity-80 hover:opacity-100" href="#">LINKEDIN</a>
+<a class="font-['Inter'] text-[11px] tracking-[0.05em] uppercase text-white/40 hover:text-[#10B981] transition-colors opacity-80 hover:opacity-100" href="https://github.com/harrison-maps" target="_blank">GITHUB</a>
+</div>
+</footer>
+</body></html>

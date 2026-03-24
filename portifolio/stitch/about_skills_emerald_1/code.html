@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-lowest": "#000000",
+              "surface-variant": "#262626",
+              "tertiary-fixed": "#00dcfd",
+              "primary": "#69f6b8",
+              "primary-dim": "#58e7ab",
+              "secondary-fixed-dim": "#47edc4",
+              "on-secondary": "#005d4a",
+              "on-primary": "#005a3c",
+              "inverse-on-surface": "#565555",
+              "secondary-fixed": "#5afcd2",
+              "on-background": "#ffffff",
+              "background": "#0e0e0e",
+              "secondary": "#5afcd2",
+              "on-error-container": "#ffa8a3",
+              "surface-dim": "#0e0e0e",
+              "inverse-primary": "#006d4a",
+              "on-tertiary-container": "#004955",
+              "error-dim": "#d7383b",
+              "on-tertiary-fixed": "#00343c",
+              "tertiary": "#77e6ff",
+              "on-secondary-fixed-variant": "#006853",
+              "primary-container": "#06b77f",
+              "on-error": "#490006",
+              "inverse-surface": "#fcf9f8",
+              "primary-fixed-dim": "#58e7ab",
+              "tertiary-container": "#00dcfd",
+              "surface-bright": "#2c2c2c",
+              "on-primary-fixed": "#00452d",
+              "surface-container-low": "#131313",
+              "secondary-container": "#006b56",
+              "primary-fixed": "#69f6b8",
+              "on-primary-fixed-variant": "#006544",
+              "on-surface": "#ffffff",
+              "surface": "#0e0e0e",
+              "surface-container-high": "#20201f",
+              "tertiary-fixed-dim": "#00cdeb",
+              "on-tertiary": "#005360",
+              "on-primary-container": "#002919",
+              "surface-container": "#1a1a1a",
+              "error": "#ff716c",
+              "secondary-dim": "#47edc4",
+              "tertiary-dim": "#00cdeb",
+              "outline-variant": "#484847",
+              "on-secondary-fixed": "#004939",
+              "surface-container-highest": "#262626",
+              "surface-tint": "#69f6b8",
+              "on-secondary-container": "#defff2",
+              "on-tertiary-fixed-variant": "#005360",
+              "outline": "#767575",
+              "on-surface-variant": "#adaaaa",
+              "error-container": "#9f0519"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #0e0e0e;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+        }
+        .monolith-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2px;
+            background-color: rgba(72, 72, 71, 0.2);
+        }
+        .glass-panel {
+            background: rgba(26, 26, 26, 0.7);
+            backdrop-filter: blur(40px);
+        }
+        .text-emerald-monolith {
+            color: #10B981;
+        }
+        .bg-emerald-monolith {
+            background-color: #10B981;
+        }
+        .border-emerald-monolith {
+            border-color: #10B981;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 rounded-none bg-[#0E0E0E] flex justify-between items-center px-12 py-6 w-full max-w-none">
+<div class="text-2xl font-bold tracking-tighter text-[#10B981] font-['Space_Grotesk'] uppercase">
+            PORTFOLIO_MONOLITH
+        </div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="font-['Space_Grotesk'] uppercase tracking-widest text-sm text-white/60 hover:text-white transition-colors" href="#">WORK</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-widest text-sm text-[#10B981] border-b-2 border-[#10B981] pb-1" href="#">ABOUT</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-widest text-sm text-white/60 hover:text-white transition-colors" href="#">SERVICES</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-widest text-sm text-white/60 hover:text-white transition-colors" href="#">CONTACT</a>
+</div>
+<button class="bg-[#10B981] text-[#002919] px-6 py-2 font-['Space_Grotesk'] font-bold uppercase text-xs tracking-widest hover:bg-[#69f6b8] transition-all duration-300 active:scale-95">
+            GET_IN_TOUCH
+        </button>
+</nav>
+<main class="pt-32 pb-20">
+<!-- Hero Section: Intentional Asymmetry -->
+<section class="px-12 mb-32">
+<div class="grid grid-cols-12 gap-8">
+<div class="col-span-12 md:col-span-8">
+<h1 class="font-headline text-[clamp(3.5rem,10vw,7rem)] leading-[0.9] font-bold tracking-tighter mb-12">
+                        ARCHITECTING <span class="text-emerald-monolith italic">INTELLIGENCE</span>.
+                    </h1>
+</div>
+<div class="col-span-12 md:col-start-8 md:col-span-5 self-end">
+<p class="font-body text-on-surface-variant text-lg leading-relaxed mb-8">
+                        A cross-disciplinary engineer focused on the intersection of scalable codebases and neural architectures. I build systems that don't just process data—they understand it.
+                    </p>
+<div class="flex items-center gap-4">
+<div class="h-[2px] w-12 bg-emerald-monolith"></div>
+<span class="font-label text-xs tracking-[0.2em] uppercase text-emerald-monolith">Curriculum Vitae 2024</span>
+</div>
+</div>
+</div>
+</section>
+<!-- About Bento Grid -->
+<section class="px-12 mb-40">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-1">
+<!-- Large Image Block -->
+<div class="md:col-span-2 md:row-span-2 relative aspect-square md:aspect-auto overflow-hidden bg-surface-container-low">
+<img alt="Professional portrait" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Professional cinematic close-up of a man in a dark turtleneck against a deep shadows background, minimalist lighting, emerald green accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4pipauA3d9HQ3k_x_wBGm3vp4jVLSQ8gY_JNAfR1a_EDDXxx3Ws6-GPMRoBaf8W6kqKim5fuNngMulXgzWnxa3nH-XWVMTiQhYMUdtH37wl8kxe_OSvuar22XiJE5rnLbeoxUUPw5NcPLn3q6zMWGcyaAXdARxaWsfiPVbSn8Gh6BAEu0Rl63pXr422-Z0By1Z-Qsn6QEIAwX3ukWP0M1WXLqkTzU7LFDsZrFmJqJHve5Zhg3XercQwgtoQ7-xCV5hQvdT7V6wn-R"/>
+<div class="absolute bottom-0 left-0 p-8 glass-panel w-full">
+<h3 class="font-headline text-2xl font-bold uppercase tracking-tight text-white mb-2">Lead Systems Architect</h3>
+<p class="font-label text-xs text-emerald-monolith tracking-widest uppercase">Based in Berlin / Remote</p>
+</div>
+</div>
+<!-- Stats Block -->
+<div class="bg-surface-container-high p-10 flex flex-col justify-between">
+<span class="font-label text-[10px] tracking-[0.3em] uppercase text-on-surface-variant">Experience</span>
+<div>
+<div class="font-headline text-6xl font-bold text-white leading-none">08+</div>
+<div class="font-label text-xs mt-2 text-emerald-monolith uppercase tracking-widest">Years in Industry</div>
+</div>
+</div>
+<!-- Expertise Block -->
+<div class="bg-surface-container-low p-10 flex flex-col justify-between border-l border-outline-variant/20">
+<span class="font-label text-[10px] tracking-[0.3em] uppercase text-on-surface-variant">Focus Area</span>
+<p class="font-body text-sm text-on-surface leading-relaxed">
+                        Specialized in high-concurrency Python backends and distributed ML pipelines.
+                    </p>
+</div>
+<!-- Visual Block -->
+<div class="md:col-span-2 bg-surface-container-highest p-10 overflow-hidden relative group">
+<div class="relative z-10 h-full flex flex-col justify-end">
+<h2 class="font-headline text-4xl font-bold tracking-tighter text-white mb-4">Neural Infrastructure &amp; Data Sovereignty.</h2>
+<p class="font-body text-on-surface-variant max-w-md">Building the next generation of privacy-first machine learning models and high-performance data lakes.</p>
+</div>
+<div class="absolute top-0 right-0 p-10 opacity-20 group-hover:opacity-40 transition-opacity">
+<span class="material-symbols-outlined text-[120px] text-emerald-monolith">hub</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section (Monolith List) -->
+<section class="px-12">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-20">
+<h2 class="font-headline text-5xl font-bold tracking-tighter uppercase">Technical <span class="text-emerald-monolith">Arsenal</span></h2>
+<div class="h-[1px] flex-grow mx-12 bg-outline-variant/20 hidden md:block"></div>
+<span class="font-label text-xs tracking-widest text-on-surface-variant uppercase">Stack_Exploration.v4</span>
+</div>
+<div class="space-y-[2.25rem]">
+<!-- Skill Category: Programming -->
+<div class="group grid grid-cols-12 gap-8 items-start py-12 bg-surface hover:bg-surface-container-low transition-all duration-300">
+<div class="col-span-12 md:col-span-3">
+<span class="font-label text-xs text-emerald-monolith tracking-[0.4em] uppercase">01 / Programming</span>
+</div>
+<div class="col-span-12 md:col-span-5">
+<h3 class="font-headline text-3xl font-bold text-white mb-6 uppercase tracking-tight">Core Architecture &amp; Logic</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                            Crafting robust, production-grade code with an emphasis on performance, type safety, and maintainable design patterns. Experienced in multi-paradigm development across distributed environments.
+                        </p>
+</div>
+<div class="col-span-12 md:col-span-4">
+<div class="flex flex-wrap gap-2">
+<span class="px-4 py-2 border border-outline-variant/30 font-label text-[10px] tracking-widest uppercase text-white hover:bg-emerald-monolith hover:text-on-primary transition-colors">Python (Expert)</span>
+<span class="px-4 py-2 border border-outline-variant/30 font-label text-[10px] tracking-widest uppercase text-white hover:bg-emerald-monolith hover:text-on-primary transition-colors">Rust</span>
+<span class="px-4 py-2 border border-outline-variant/30 font-label text-[10px] tracking-widest uppercase text-white hover:bg-emerald-monolith hover:text-on-primary transition-colors">TypeScript</span>
+<span class="px-4 py-2 border border-outline-variant/30 font-label text-[10px] tracking-widest uppercase text-white hover:bg-emerald-monolith hover:text-on-primary transition-colors">Go</span>
+<span class="px-4 py-2 border border-outline-variant/30 font-label text-[10px] tracking-widest uppercase text-white hover:bg-emerald-monolith hover:text-on-primary transition-colors">C++</span>
+</div>
+</div>
+</div>
+<!-- Skill Category: Data Science -->
+<div class="group grid grid-cols-12 gap-8 items-start py-12 bg-surface hover:bg-surface-container-low transition-all duration-300">
+<div class="col-span-12 md:col-span-3">
+<span class="font-label text-xs text-emerald-monolith tracking-[0.4em] uppercase">02 / Data Science</span>
+</div>
+<div class="col-span-12 md:col-span-5">
+<h3 class="font-headline text-3xl font-bold text-white mb-6 uppercase tracking-tight">Analytics &amp; Intelligence</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                            Extracting actionable insights from high-dimensional datasets. Mastery of statistical modeling, exploratory analysis, and real-time data visualization frameworks for executive-level decision making.
+                        </p>
+</div>
+<div class="col-span-12 md:col-span-4">
+<div class="flex flex-wrap gap-2">
+<span class="px-4 py-2 border border-outline-variant/30 font-label text-[10px] tracking-widest uppercase text-white hover:bg-emerald-monolith hover:text-on-primary transition-colors">Pandas/NumPy</span>
+<span class="px-4 py-2 border border-outline-variant/30 font-label text-[10px] tracking-widest uppercase text-white hover:bg-emerald-monolith hover:text-on-primary transition-colors">SQL/Postgres</span>
+<span class="px-4 py-2 border border-outline-variant/30 font-label text-[10px] tracking-widest uppercase text-white hover:bg-emerald-monolith hover:text-on-primary transition-colors">Spark</span>
+<span class="px-4 py-2 border border-outline-variant/30 font-label text-[10px] tracking-widest uppercase text-white hover:bg-emerald-monolith hover:text-on-primary transition-colors">Tableau</span>
+<span class="px-4 py-2 border border-outline-variant/30 font-label text-[10px] tracking-widest uppercase text-white hover:bg-emerald-monolith hover:text-on-primary transition-colors">A/B Testing</span>
+</div>
+</div>
+</div>
+<!-- Skill Category: Machine Learning -->
+<div class="group grid grid-cols-12 gap-8 items-start py-12 bg-surface hover:bg-surface-container-low transition-all duration-300">
+<div class="col-span-12 md:col-span-3">
+<span class="font-label text-xs text-emerald-monolith tracking-[0.4em] uppercase">03 / Machine Learning</span>
+</div>
+<div class="col-span-12 md:col-span-5">
+<h3 class="font-headline text-3xl font-bold text-white mb-6 uppercase tracking-tight">Neural Engineering</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                            Designing and deploying deep learning models that solve complex problems. From NLP Transformers to Computer Vision systems, focusing on MLOps and ethical AI implementation.
+                        </p>
+</div>
+<div class="col-span-12 md:col-span-4">
+<div class="flex flex-wrap gap-2">
+<span class="px-4 py-2 border border-outline-variant/30 font-label text-[10px] tracking-widest uppercase text-white hover:bg-emerald-monolith hover:text-on-primary transition-colors">PyTorch</span>
+<span class="px-4 py-2 border border-outline-variant/30 font-label text-[10px] tracking-widest uppercase text-white hover:bg-emerald-monolith hover:text-on-primary transition-colors">TensorFlow</span>
+<span class="px-4 py-2 border border-outline-variant/30 font-label text-[10px] tracking-widest uppercase text-white hover:bg-emerald-monolith hover:text-on-primary transition-colors">Scikit-learn</span>
+<span class="px-4 py-2 border border-outline-variant/30 font-label text-[10px] tracking-widest uppercase text-white hover:bg-emerald-monolith hover:text-on-primary transition-colors">LLMs</span>
+<span class="px-4 py-2 border border-outline-variant/30 font-label text-[10px] tracking-widest uppercase text-white hover:bg-emerald-monolith hover:text-on-primary transition-colors">NLP</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA: The Precise Monolith -->
+<section class="mt-40 px-12">
+<div class="bg-surface-container-low p-20 flex flex-col items-center text-center border-l-4 border-emerald-monolith">
+<span class="font-label text-xs text-emerald-monolith tracking-[0.5em] uppercase mb-8">Initiate Collaboration</span>
+<h2 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-white mb-12 max-w-4xl">
+                    LET'S ENGINEER THE FUTURE OF DATA TOGETHER.
+                </h2>
+<button class="bg-emerald-monolith text-on-primary px-12 py-5 font-headline font-bold uppercase tracking-widest text-lg hover:scale-105 transition-transform duration-300">
+                    Download Portfolio.PDF
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#484847]/20 bg-[#0E0E0E] flex flex-col md:flex-row justify-between items-center px-12 py-10 w-full">
+<div class="text-[#10B981] font-black font-['Inter'] text-[11px] tracking-[0.05em] uppercase mb-6 md:mb-0">
+            PORTFOLIO MONOLITH
+        </div>
+<div class="text-white/40 font-['Inter'] text-[11px] tracking-[0.05em] uppercase mb-6 md:mb-0">
+            © 2024 PORTFOLIO MONOLITH. ALL RIGHTS RESERVED.
+        </div>
+<div class="flex gap-8">
+<a class="font-['Inter'] text-[11px] tracking-[0.05em] uppercase text-white/40 hover:text-[#10B981] transition-colors opacity-80 hover:opacity-100" href="#">INSTAGRAM</a>
+<a class="font-['Inter'] text-[11px] tracking-[0.05em] uppercase text-white/40 hover:text-[#10B981] transition-colors opacity-80 hover:opacity-100" href="#">DRIBBBLE</a>
+<a class="font-['Inter'] text-[11px] tracking-[0.05em] uppercase text-white/40 hover:text-[#10B981] transition-colors opacity-80 hover:opacity-100" href="#">LINKEDIN</a>
+<a class="font-['Inter'] text-[11px] tracking-[0.05em] uppercase text-white/40 hover:text-[#10B981] transition-colors opacity-80 hover:opacity-100" href="#">GITHUB</a>
+</div>
+</footer>
+</body></html>
